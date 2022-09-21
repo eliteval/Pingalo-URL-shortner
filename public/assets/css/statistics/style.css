@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+/* font-family: 'Inter', sans-serif; */
+:root {
+    --orange: #E6593B;
+    --bgsky: #A1CCC9;
+    --textdark: #3B3A40;
+    --black: #000;
+}
+
+a {
+    text-decoration: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+/* ==== Font ==== */
+@font-face {
+    font-family: 'Aileron';
+    src: url('../../fonts/Aileron-Bold.woff2') format('woff2'),
+        url('../../fonts/Aileron-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../../fonts/Aileron-Heavy.woff2') format('woff2'),
+        url('../../fonts/Aileron-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../../fonts/Aileron-Black.woff2') format('woff2'),
+        url('../../fonts/Aileron-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../../fonts/Aileron-Regular.woff2') format('woff2'),
+        url('../../fonts/Aileron-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../../fonts/Aileron-Thin.woff2') format('woff2'),
+        url('../../fonts/Aileron-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../../fonts/Aileron-ThinItalic.woff2') format('woff2'),
+        url('../../fonts/Aileron-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../../fonts/Aileron-SemiBold.woff2') format('woff2'),
+        url('../../fonts/Aileron-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../../fonts/Aileron-UltraLight.woff2') format('woff2'),
+        url('../../fonts/Aileron-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../../fonts/Aileron-Light.woff2') format('woff2'),
+        url('../../fonts/Aileron-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../../fonts/Aileron-Italic.woff2') format('woff2'),
+        url('../../fonts/Aileron-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+/* ==== Font ==== */
+
+body {
+    background: #fff;
+    font-family: 'Aileron';
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+p {
+    font-size: 14px;
+    color: #000;
+}
+
+.container {
+    max-width: 1161px;
+}
+
+/* ==== Header ==== */
+
+header {
+    background: #fff;
+}
+
+header .navbar {
+    border-radius: 0;
+    background: transparent;
+    padding: 0;
+    height: 79px;
+}
+
+header .navbar .navbar-brand {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--textdark);
+    line-height: 39px;
+    padding: 0;
+    margin: 0;
+}
+
+header .navbar .nav-item {
+    margin: 0 20px 0 22px;
+}
+
+header .navbar .nav-item:first-child {
+    margin-right: 18.1px;
+    position: relative;
+    left: -2.4px;
+}
+
+header .navbar .navbar-nav {
+    margin-top: -10px;
+}
+
+header .navbar .nav-item .nav-link {
+    padding: 0 !important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.2px;
+    color: var(--textdark);
+    text-transform: uppercase;
+    position: relative;
+}
+
+header .navbar .nav-item .nav-link:after {
+    content: "";
+    background: var(--orange);
+    height: 2px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 24px;
+    transition: all 0.3s ease-in;
+}
+
+header .navbar .nav-item .nav-link:hover:after,
+header .navbar .nav-item .nav-link.active:after {
+    width: 100%;
+}
+
+header .navbar .userDrop {
+    margin-right: 4px;
+}
+
+header .navbar .userDrop .dropdown-toggle::after {
+    border: none;
+    content: url(../../images/statistics/dropIcon.svg);
+    margin-top: -9px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+header .navbar .userDrop .userAvtar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(230, 89, 59, 0.1);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: var(--orange);
+    margin-right: 5px;
+}
+
+header .navbar .userDrop .userName {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: var(--textdark);
+    text-transform: capitalize;
+}
+
+header .navbar .userDrop .dropdown-menu {
+    border: none;
+    border-radius: 0;
+    background: #fff;
+    padding: 0;
+    min-width: 200px;
+    top: 54px;
+}
+
+header .navbar .userDrop .dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: var(--textdark);
+    transition: all 0.3s ease-in;
+}
+
+header .navbar .userDrop .dropdown-menu li a:hover {
+    color: var(--orange);
+}
+
+/* ==== Header ==== */
+
+
+/* ==== Main Section ==== */
+
+.mainSection {
+    background: var(--bgsky);
+    border-radius: 48px 48px 0 0;
+    padding: 48px 0 110px;
+}
+
+.mainSection .row {
+    margin-right: -19px;
+}
+
+.mainSection .backBtn {
+    color: var(--black);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease-in;
+}
+
+.mainSection .backBtn:hover {
+    color: var(--orange);
+}
+
+.mainSection .backBtn img {
+    margin-right: 8px;
+}
+
+.mainSection .profileDetail {
+    background: #FFFFFF;
+    border: 1px solid #EFF2ED;
+    border-radius: 16px;
+    margin: 28px 0 42px;
+    padding: 15px 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mainSection .profileDetail .leftPart {
+    max-width: 70%;
+    flex: 70%;
+}
+
+.mainSection .profileDetail .leftPart ul {
+    padding: 0;
+}
+
+.mainSection .profileDetail .leftPart ul li {
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--textdark);
+}
+
+.mainSection .profileDetail .leftPart ul li+li {
+    margin-top: 16px;
+}
+
+.mainSection .profileDetail .leftPart ul li .title {
+    width: 160px;
+}
+
+.mainSection .profileDetail .leftPart ul li .strong-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+}
+
+.mainSection .profileDetail .leftPart ul li .profileDis a {
+    display: flex;
+    align-items: center;
+}
+
+.mainSection .profileDetail .leftPart ul li .profileDis a:hover {
+    text-decoration: underline;
+}
+
+.mainSection .profileDetail .leftPart ul li .profileDis a img {
+    margin-right: 8px;
+}
+
+.mainSection .profileDetail .leftPart ul li .profileDis a.dblack {
+    color: var(--black);
+    letter-spacing: -0.3px;
+}
+
+.mainSection .profileDetail .leftPart ul li .profileDis a.orange {
+    color: var(--orange);
+}
+
+.mainSection .profileDetail .rightPart {
+    max-width: 27%;
+    flex: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.mainSection .profileDetail .rightPart a {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--textdark);
+    background: #FFFFFF;
+    border: 1px solid #EFF2ED;
+    border-radius: 8px 9px;
+    text-transform: capitalize;
+    padding: 7px;
+    transition: all 0.3s ease-in;
+    margin-left: 16.2px;
+}
+
+.mainSection .profileDetail .rightPart a svg {
+    margin-right: 8px;
+}
+
+.mainSection .profileDetail .rightPart a:hover,
+.mainSection .profileDetail .rightPart a.active {
+    background: #EFF2ED;
+}
+
+.mainSection .chartBlock {
+    background: #FFFFFF;
+    border: 1px solid #EFF2ED;
+    border-radius: 8px;
+    padding: 15px 23px;
+    height: 100%;
+}
+.mainSection .chartBlock canvas{
+    font-family: 'Inter', sans-serif;
+}
+.mainSection .chartBlock .chartHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+.mainSection .chartBlock .chartHeader .dlRight a{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    color: #8F9496;
+    padding: 8px 16.5px ;
+    letter-spacing: -0.1px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: all 0.3s ease-in;
+}
+.mainSection .chartBlock .chartHeader .dlRight a:hover, .mainSection .chartBlock .chartHeader .dlRight a.active{
+    background: #EFF2ED;
+    color: #181A26;
+}
+.mainSection .chartBlock h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    color: #181A26;
+    padding-left: 20px;
+    position: relative;
+    letter-spacing: -0.5px;
+    margin-bottom: 0;
+}
+.mainSection .chartBlock h3 strong{
+    font-size: 20px;
+    margin-right: 1px;
+}
+.mainSection .chartBlock h3:before {
+    content: "";
+    background: var(--orange);
+    width: 4px;
+    height: 32px;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.mainSection .countriesBlock {
+    background: #FFFFFF;
+    border: 1px solid #EFF2ED;
+    border-radius: 8px;
+    padding: 15px 23px;
+    height: 100%;
+}
+
+.mainSection .countriesBlock h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #181A26;
+    padding-left: 20px;
+    position: relative;
+    letter-spacing: -0.4px;
+    margin-top: 12px;
+}
+
+.mainSection .countriesBlock h3:before {
+    content: "";
+    background: var(--orange);
+    width: 4px;
+    height: 32px;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.mainSection .countriesBlock .list-group {
+    margin-top: 24px;
+    padding: 0 20px 0 0;
+}
+
+.mainSection .countriesBlock .list-group-item {
+    padding: 12px 0;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    color: #181A26;
+    letter-spacing: -0.01em;
+}
+
+.mainSection .countriesBlock .list-group-item .countryFlag {
+    width: 32px;
+    height: 32px;
+    background: #EFF2ED;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+
+.mainSection .customcol1.col-md-8 {
+    flex: 0 0 auto;
+    width: 67.1%;
+}
+
+.mainSection .customcol2.col-md-4 {
+    flex: 0 0 auto;
+    width: 32.9%;
+}
+
+/* ==== Main Section ==== */
+
+
+
+
+
+
+
+/* ==== Footer ==== */
+
+footer {
+    background: #fff;
+    padding: 50px 172px 40px;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -35px;
+}
+
+footer .copyText {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 30px;
+    color: #1D263A;
+}
+
+footer .fLink {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: -3px;
+}
+
+footer .fLink a {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    color: #1D263A;
+    margin: 0 33px;
+    transition: all 0.3s ease-in;
+}
+
+footer .fLink a:hover {
+    color: var(--orange);
+}
+
+footer .socialLink {
+    text-align: right;
+    margin-top: -3px;
+}
+
+footer .socialLink a {
+    margin-left: 46px;
+}
+
+footer .socialLink a svg:hover path {
+    fill: var(--orange);
+    transition: all 0.3s ease-in;
+}
+
+/* ==== Footer ==== */

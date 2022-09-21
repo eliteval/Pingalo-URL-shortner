@@ -1,0 +1,693 @@
+@font-face {
+    font-family: "Aileron";
+    src:  url("/assets/fonts/aileron/Aileron-Regular.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src:  url("/assets/fonts/robotoSlab/RobotoSlab-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Navbar CSS */
+
+/* .logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #3b3a40;
+} */
+
+.logo {
+  width: 120px !important;
+}
+
+.heroHeading{
+    font-weight: bold;
+    font-size: 68px !important;
+    line-height: 68px !important;
+    letter-spacing: 0.4px
+}
+
+.navbar .nav-item .nav-link {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  letter-spacing: 0.2px;
+  color: #3b3a40;
+  margin-left: 30px;
+}
+
+.active {
+  border-bottom: 2px solid #e6593b;
+}
+
+.reg-btn {
+  background-color: #232323;
+  color: #ffffff !important;
+  border-radius: 5px;
+  padding: 12px 32px 12px 32px !important;
+}
+.hero {
+  margin-top: 80px;
+  min-height: 900px;
+  background-image: url("/assets/images/MainImage.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+}
+.hero .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero .hero-text h1 {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  /* font-weight: 900; */
+  /* font-size: 60px; */
+  /* line-height: 79px; */
+  text-align: center;
+  letter-spacing: 1px;
+  color: #000000;
+}
+.hero .hero-text h1 span {
+  background-color: #e6593b;
+  color: #ffff;
+  padding: 5px;
+}
+.hero .hero-text p {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  text-align: center;
+  letter-spacing: 0.18px;
+
+  color: #232e69;
+
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+.hero .hero-text a {
+  text-decoration: none;
+  background-color: #232323;
+  padding: 12px 32px 12px 32px;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+/* More Features Section CSS */
+.more-features {
+    background-color: #EFF2ED;
+    border-radius: 48px 48px 0px 0px;
+}
+.more-features h6 {
+    color: #8e8c95;
+}
+.more-features h2 {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 63px;
+    letter-spacing: 0.8px;
+    color: #000000;
+}
+.feature-card {
+    height: 240px;
+}
+.easy-card .card-wrapper {
+    padding: 35px;
+}
+.card-wrapper {
+    padding: 35px;
+}
+.easy-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.1);
+}
+.feature-card .img-wrapper {
+    text-align: left;
+}
+.feature-card .img-wrapper img {
+    width: 50px;
+}
+.feature-card .text-wrapper h3 {
+    font-family: "Aileron";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.3375px;
+
+    color: #3b3a40;
+
+    margin-top: 20px;
+}
+.feature-card .text-wrapper p {
+    font-family: "Aileron";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+    letter-spacing: 0.2px;
+
+    color: #64626a;
+}
+
+footer .b-ground {
+    background-color: #a1ccc9;
+    background-image: url("/assets/images/footerBg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 40px 40px 0px 0px;
+    min-height: 350px;
+    margin-top: -3%;
+}
+footer .footer-text {
+    padding: 20px 25px;
+}
+footer .footer-text h2 {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 63px;
+    letter-spacing: 0.8px;
+
+    color: #000000;
+}
+footer .footer-text p {
+    font-family: "Aileron";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+    letter-spacing: 0.2px;
+
+    color: #3b3a40;
+}
+footer .footer-text a {
+    text-decoration: none;
+    background-color: #232323;
+    padding: 12px 32px 12px 32px;
+    border-radius: 8px;
+    color: #ffffff;
+}
+.footer-links {
+    margin-top: -30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 30px 20px 0 0;
+}
+.footer-links p {
+    font-family: "Aileron";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 30px;
+    color: #1d263a;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+
+    font-family: "Aileron";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    /* identical to box height, or 176% */
+
+    /* Text Color */
+
+    color: #1d263a;
+}
+
+.shortUrl{
+    background-color: #A1CCC9;
+    border-radius: 48px 48px 0px 0px;
+}
+.width80{
+    width: 95%;
+}
+.shortUrlTitle{
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 75px;
+    letter-spacing: 0.8px;
+
+    color: #000000;
+}
+
+.btn-primary{
+    background: #232323;
+    border-radius: 8px;
+    padding: 10px 25px !important;
+}
+
+.shortUrlSpan{
+    font-family: 'Aileron';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    color: #3B3A40;
+}
+
+.rectangle{
+    width: 60px;
+    height: 2px;
+    top: 10px;
+    background: #3B3A40;
+    opacity: 0.6;
+    margin: 5px 15px 5px 0;
+    display: inline-block;
+}
+
+.btn:hover {
+    color: #232323;
+    background-color: #232323;
+    border-color: #232323;
+}
+
+p{
+    margin-bottom: 1.5rem;
+}
+
+.collaborateBg{
+    background-color: #ffffff;
+    border-radius: 48px 48px 0px 0px;
+    margin-top: -2.5rem !important;
+}
+
+.collaborateTitle{
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: 0.8px;
+    color: #000000;
+    width: 85%;
+}
+
+.cImageMargin{
+    margin-top: 8%;
+}
+
+.cSectionMargin{
+    margin: 4%;
+    margin-left: 7%
+}
+
+.fSectionMargin{
+    margin: 0 6%
+}
+
+.footerLogo{
+    margin-left: 3%
+}
+
+.text-align-center{
+    text-align: center
+}
+
+.more-features2{
+    border-radius: 48px 48px 0px 0px
+}
+
+.mt-10 {
+    margin-top: 10% !important;
+  }
+.margin100{
+    margin-left:100px;
+    margin-right: 100px;
+}
+
+.content_subtitle{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 46px;
+    letter-spacing: 0.4px
+}
+.privacyTitle{
+    font-family: Aileron;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0.800000011920929px;
+    text-align: left;
+    margin-top: 40px;
+    margin-left:50px
+  }
+
+.collaboratePrivacy{
+    background-color: #EFF2ED;
+    border-radius: 48px 48px 0px 0px;
+    margin-top: -2.5rem !important;
+}
+
+.padding100{
+    padding:0 100px 50px 100px;
+}
+
+.contact {
+	padding: 100px 0 150px;
+    background: #EFF2ED;
+}
+.contact_main {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+}
+.contact_main .contact_img {
+	width: 50%;
+}
+.contact_main .contact_text {
+	width: 40%;
+}
+.contact_img {
+	padding-right: 80px;
+}
+.contact_text h2 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 58px;
+	letter-spacing: 0.8px;
+	color: #000000;
+	margin-bottom: 5px;
+}
+.contact_text > p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #64626A;
+	margin-bottom: 20px;
+}
+.email_mn , .message_mn {
+	margin-bottom: 20px;
+}
+.email_mn p, .message_mn p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #64626A;
+	margin-bottom: 5px;
+}
+.contact_text input, .contact_text textarea {
+	padding: 10px 16px;
+	background: #FFFFFF;
+	border-radius: 8px;
+	border: none;
+	width: 100%;
+	outline: none;
+}
+.contact_text textarea {
+	height: 120px;
+}
+.contact_text button {
+	padding: 15px 32px;
+	background: #232323;
+	box-shadow: inset 0px -2px 0px #696969;
+	border-radius: 8px;
+	color: #fff;
+	border: none;
+}
+
+/* register css */
+.register{
+    padding: 100px 0 150px;
+    background: #FFFFFF;
+    align-items: center;
+    /* position:absolute; */
+}
+
+.register_back{
+	max-width: 100%;
+    background-image: url("/assets/images/Pattern.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.register_main{
+    background: #EFF2ED;
+    width:30%;
+    margin-left:35%;
+    margin-right:35%;
+}
+
+.register_main .content{
+    margin:20px 20px 20px 20px;
+}
+
+.register_main .title{
+    font-family: Aileron;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.800000011920929px;
+    text-align: center;
+    margin-top:30px;
+}
+
+.register_main .row .subtitle{
+    font-family: Aileron;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top:30px;
+}
+
+.register_main .subtitle input{
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.register_button_back{
+    width:100%;
+    height:28px;
+    margin-top:20px;
+    background: #000000;
+    text-align: center;
+}
+
+.register_policy{
+    font-family: Aileron;
+    font-size: 10px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    margin-top: 1px;
+    text-align:center;
+    align-items: center;
+    color:#000000;
+    width:100%;
+    height:80px;
+    margin-top:20px;
+    background: #EFF2ED;
+}
+.register_button{
+    font-family: Aileron;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    margin-top: 1px;
+    text-align:center;
+    align-items: center;
+    color:#FFFFFF;
+}
+
+@media only screen and (max-width: 500px) {
+    .heroHeading{
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 46px;
+        letter-spacing: 0.4px
+    }
+
+    .hero .hero-text p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    .hero {
+        min-height: 530px;
+    }
+
+    .shortUrlTitle{
+        font-size: 26px;
+    }
+
+    .collaborateTitle {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .cImageMargin{
+        margin-top: 4%;
+    }
+
+    .cImage{
+        width: 100%;
+    }
+
+    .cSectionMargin{
+        margin: 2%;
+        margin-left: 0
+    }
+
+    .more-features h2 {
+        font-size: 26px;
+        line-height: 36px
+    }
+
+    .fSectionMargin{
+        margin: 0
+    }
+
+    footer .footer-text h2 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .more-features {
+        padding-bottom: 12%;
+    }
+
+    footer .b-ground {
+        margin-top: -8%;
+    }
+
+    .footerLogo{
+        text-align: center;
+        margin-left: 0
+    }
+
+    .privacyTitle{
+        font-family: Aileron;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0.800000011920929px;
+        text-align: left;
+        margin-top: 20px;
+        margin-left:10px
+    }
+
+    .padding100{
+        padding:0 30px 10px 30px;
+        text-align: justify;
+    }
+    .content_subtitle{
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.4px
+    }
+
+    .register_main .title{
+        font-size: 20px;
+        line-height: 15px;
+    }
+
+    .register_main .subtitle{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .register_main .subtitle input{
+        margin-top: 3px;
+    }
+
+
+}
+
+@media (max-width: 768px){
+
+    .contact_main .contact_text {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px){
+
+    .contact_text button {
+        padding: 10px 24px;
+    }
+    .contact {
+        padding: 40px 0;
+    }
+    .contact_main {
+        padding: 0 15px;
+        flex-direction: column;
+    }
+    .contact_main > div {
+        width: 100% !important;
+        padding: 0;
+    }
+    .contact_main .contact_text {
+        margin-top: 40px;
+    }
+
+    .short_img , .short_text , .collaborate_text , .collaborate_img {
+		width: 100%;
+	}
+	.short_text p {
+		font-size: 14px;
+	}
+	.short_text button {
+		padding: 16px 20px;
+	}
+	.collaborate_text {
+		margin-top: 40px;
+	}
+    .register{
+        padding: 40px 0;
+    }
+}

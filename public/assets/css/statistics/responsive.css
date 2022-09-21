@@ -1,0 +1,172 @@
+@media (max-width: 1199px) {
+    .mainSection .row {
+        margin-right: -12px;
+    }
+    footer {
+        padding: 50px 50px 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    .mainSection .row {
+        margin-right: -12px;
+    }
+
+    footer .fLink a {
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+    footer .socialLink a {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-toggler{
+        position: absolute;
+        right: 15px;
+        border: none;
+        padding: 0;
+    }
+    .navbar-collapse{
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        top: 79px;
+        background: #fff;
+    }
+    .navbar-collapse ul{
+        padding: 15px;
+    }
+    .navbar-collapse ul .nav-item{
+        line-height: 36px;
+        margin: 0;
+    }
+    header .navbar .nav-item:first-child{
+        margin: 0;
+    }
+    header .navbar .nav-item .nav-link{
+        display: inline-block;
+    }
+    header .navbar .nav-item .nav-link:after{
+        bottom: -6px;
+    }
+    header .navbar .userDrop{
+        margin:0 50px 0 0;
+    }
+    header .navbar .userDrop .userName{
+        display: none;
+    }
+    header .navbar .userDrop .dropdown-toggle::after{
+        display: none;
+    }
+    .mainSection{
+        padding: 30px 0 60px;
+    }
+    .mainSection .row {
+        margin-right: -12px;
+    }
+
+    .mainSection .profileDetail {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 15px 0 24px;
+    }
+
+    .mainSection .profileDetail .leftPart {
+        max-width: 100%;
+        flex: 100%;
+    }
+
+    .mainSection .profileDetail .rightPart {
+        max-width: 100%;
+        flex: 100%;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .mainSection .profileDetail .rightPart a {
+        margin: 15px 10px 0 0;
+    }
+
+    .mainSection .customcol1.col-md-8 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .mainSection .customcol2.col-md-4 {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    footer {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    footer .fLink {
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    footer .fLink a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    footer .socialLink {
+        text-align: center;
+    }
+
+    footer .socialLink a {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    header .navbar .navbar-brand{
+        font-size: 26px;
+    }
+    header .navbar .userDrop .userName{
+        font-size: 14px;
+    }
+    header .navbar .userDrop{
+        margin:0 40px 0 0;
+    }
+
+    .mainSection .profileDetail .leftPart ul li .strong-text {
+        font-size: 14px;
+    }
+
+    .mainSection .profileDetail .leftPart ul li {
+        font-size: 14px;
+        flex-direction: column;
+    }
+    .mainSection .profileDetail .rightPart a svg{
+        width: 20px;
+    }
+    .mainSection .chartBlock .chartHeader .dlRight a {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .mainSection .chartBlock h3 {
+        padding-left: 15px;
+        font-size: 14px;
+    }
+    .mainSection .chartBlock .chartHeader{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .mainSection .chartBlock h3 strong {
+        font-size: 16px;
+    }
+
+    .mainSection .countriesBlock h3 {
+        font-size: 16px;
+        padding-left: 15px;
+    }
+}
